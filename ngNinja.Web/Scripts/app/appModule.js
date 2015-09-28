@@ -13,7 +13,7 @@
     // Request Type, URL, Parameter Object will be passed to this shared service, so it will make code more maintainable
     // readble and scaleble. If we dont go through this method then we have to use $http.get() or $http.post method
     // every where in services files of each module, content negotiation issues can be simply handled over here, 
-    // If you want to append anything with each URL like 'Http:\\Jobcorp\' then instead of copy it on every service file
+    // If you want to append anything with each URL like 'Http:\\mydomain\' then instead of copy it on every service file
     // just hardcode this thing in this file and append URL from thier respective services. 
     // We dont need to mention protocol and hostname now in every URL request. 
 
