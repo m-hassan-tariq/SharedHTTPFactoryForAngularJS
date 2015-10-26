@@ -22,14 +22,23 @@ For complete understanding, I have drawn a basic sequence diagram for flow:
   ..* This will serve as abstraction layer for underlying implemntation, Just pass URL, Request Type, Parameter Object
 - Angular: Global Service (appModule.JS)
   ..* This will contain shared/global service which will be consumed by all modules for executing CRUD operation,
-       Request Type, URL, Parameter Object will be passed to this shared service, so it will make code more maintainable
+       Request Type, URL, Parameter Object will be passed to this shared service, so it will make code more maintainable, readable and scalable 
 
 
 
-  ..* readable and scalable​. If we dont go through this method then we have to use $http.get() or $http.post method
-  ..* every where in services files of each module, content negotiation issues can be simply handled over here,
-  ..* If you want to append anything with each URL like ‘Http:\\mydomain\’ then instead of copy it on every service file
-  ..* just hard-code this thing in this file and append URL from their respective services.
+  ..* If we dont go through this method then we have to use $http.get() or $http.post method
+ every where in services files of each module
+ 
+ 
+ 
+  ..* content negotiation issues can be simply handled over here
+  
+  
+  
+  ..* If you want to append anything with each URL like ‘Http:\\mydomain\’ then instead of copy it on every service file just hard-code this thing in this file and append URL from their respective services.
+  
+  
+  
   ..* We don’t need to mention protocol and host-name now in every URL request.
 
 For further clarification I have mentioned case of second module, how its controller and service will utilize this global service file.
