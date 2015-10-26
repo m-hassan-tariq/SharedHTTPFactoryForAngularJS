@@ -17,12 +17,21 @@ Usage of shared services in angularjs application containing mini SPA’s
 
 For complete understanding, I have drawn a basic sequence diagram for flow:
 - Angular: Module Service (onboardingapp.candidate.controller.js)
+ 
+
+
   ..* Invoke your service layer for this module​ and will contain .success and .error content of each request
 - Angular: Module Service (onboardingapp.candidate.services.js)
+
+
+
   ..* This will serve as abstraction layer for underlying implemntation, Just pass URL, Request Type, Parameter Object
 - Angular: Global Service (appModule.JS)
+
+
+
   ..* This will contain shared/global service which will be consumed by all modules for executing CRUD operation,
-       Request Type, URL, Parameter Object will be passed to this shared service, so it will make code more maintainable, readable and scalable 
+       Request Type, URL, Parameter Object will be passed to this shared service, so it will make code more     maintainable, readable and scalable 
 
 
 
