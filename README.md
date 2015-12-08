@@ -1,6 +1,6 @@
 # Scalable AngularJS App Demo
 
-Usage of shared http services in angularjs application containing mini SPA’s
+Usage of shared http services in angularjs application containing mini SPA’s.
 
 For complete understanding, I have drawn a basic sequence diagram for flow:
 - Angular: Module Service (onboardingapp.candidate.controller.js)
