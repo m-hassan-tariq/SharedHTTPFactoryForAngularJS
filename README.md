@@ -1,4 +1,4 @@
-# ScalableAngularJSAppDemo
+# Scalable AngularJS App Demo
 
 Usage of shared http services in angularjs application containing mini SPA’s
 
